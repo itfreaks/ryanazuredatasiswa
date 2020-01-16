@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Data Siswa</title>
+	<title>Data Siswaa</title>
 </head>
 <body>
 	<h1>Data Siswa</h1>
