@@ -1,14 +1,16 @@
 <?php
-$host = "ryanappserver.database.windows.net";
-$user = "ryanadmin";
-$pass = "p@ssw0rd";
-$db = "dicodingDB";
 
-//mssql_connect($host,$user,$pass) or die("Koneksi gagal");
-//mssql_select_db($db) or die("Database tidak bisa dibuka");
-
-
- new PDO("sqlsrv:server = $host; Database = $db", $user, $pass);
- setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+$server = 'ryanappserver.database.windows.net';
+$username = 'ryanadmin';
+$password = 'p@ssw0rd';
+$con = mssql_connect($server, $username, $password);
+if ($con) 
+{
+    echo 'Berhasil konek!';
+}
+else
+{
+    echo 'Koneksi GAGAL!';
+}
 
 ?>
